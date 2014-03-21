@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface ListViewController : UIViewController
+{
+    __weak IBOutlet UITableView *mainTableView;
+}
 
 @end
