@@ -16,6 +16,7 @@
 		A6BC28CA18DC6DF600E8F571 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BC28C918DC6DF600E8F571 /* Product.m */; };
 		A6BC28CE18DC772D00E8F571 /* ImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BC28CD18DC772D00E8F571 /* ImageCache.m */; };
 		A6BC28D118DC79CF00E8F571 /* PhotoPreview.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BC28D018DC79CF00E8F571 /* PhotoPreview.m */; };
+		A6BC28D718DC844900E8F571 /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BC28D618DC844900E8F571 /* Image.m */; };
 		A6C0ED9318DB379800B0DE65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6C0ED9218DB379800B0DE65 /* Foundation.framework */; };
 		A6C0ED9518DB379800B0DE65 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6C0ED9418DB379800B0DE65 /* CoreGraphics.framework */; };
 		A6C0ED9718DB379800B0DE65 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6C0ED9618DB379800B0DE65 /* UIKit.framework */; };
@@ -55,6 +56,8 @@
 		A6BC28CD18DC772D00E8F571 /* ImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCache.m; sourceTree = "<group>"; };
 		A6BC28CF18DC79CF00E8F571 /* PhotoPreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoPreview.h; sourceTree = "<group>"; };
 		A6BC28D018DC79CF00E8F571 /* PhotoPreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoPreview.m; sourceTree = "<group>"; };
+		A6BC28D518DC844900E8F571 /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		A6BC28D618DC844900E8F571 /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Image.m; sourceTree = "<group>"; };
 		A6C0ED8F18DB379800B0DE65 /* StylightTestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StylightTestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6C0ED9218DB379800B0DE65 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A6C0ED9418DB379800B0DE65 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -240,6 +243,8 @@
 		A6C0EE2018DB494200B0DE65 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A6BC28D518DC844900E8F571 /* Image.h */,
+				A6BC28D618DC844900E8F571 /* Image.m */,
 				A6BC28CF18DC79CF00E8F571 /* PhotoPreview.h */,
 				A6BC28D018DC79CF00E8F571 /* PhotoPreview.m */,
 				A6C0EE3618DB494200B0DE65 /* StylightModel.h */,
@@ -392,6 +397,7 @@
 				A6C0EDA318DB379800B0DE65 /* AppDelegate.m in Sources */,
 				A6C0ED9F18DB379800B0DE65 /* main.m in Sources */,
 				A6BC28CE18DC772D00E8F571 /* ImageCache.m in Sources */,
+				A6BC28D718DC844900E8F571 /* Image.m in Sources */,
 				A6BC28C418DC6DF600E8F571 /* Board.m in Sources */,
 				A6BC28D118DC79CF00E8F571 /* PhotoPreview.m in Sources */,
 			);

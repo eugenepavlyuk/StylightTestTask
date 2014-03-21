@@ -30,6 +30,7 @@ static NSString *const kItemTableViewCellIdentifier     =   @"ItemTableViewCellI
     
     FICImageCacheCompletionBlock completionBlock = ^(id <FICEntity> entity, NSString *formatName, UIImage *image) {
         [spinnerView stopAnimating];
+        imagePreview.image = nil;
         imagePreview.image = image;
         [imagePreview.layer addAnimation:[CATransition animation] forKey:kCATransition];
     };

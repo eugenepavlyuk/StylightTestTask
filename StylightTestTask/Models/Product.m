@@ -11,6 +11,7 @@
 #import <RestKit/CoreData.h>
 #import "Constants.h"
 #import "PhotoPreview.h"
+#import "Image.h"
 #import <MagicalRecord/NSManagedObject+MagicalRecord.h>
 
 static NSString * kProductIdKey         =   @"productId";
@@ -36,7 +37,13 @@ static NSString * kImagesKey            =   @"images";
     [statusCodes addIndexes:RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful)];
     
     [mapping addAttributeMappingsFromArray:@[[RKAttributeMapping attributeMappingFromKeyPath:kIdKey toKeyPath:kProductIdKey],
-                                             kDescriptionKey, kNameKey, kImagesKey]];
+                                             kDescriptionKey, kNameKey]];
+    
+    RKEntityMapping *imageMapping = (RKEntityMapping*)[Image mapping];
+    
+    RKRelationshipMapping *imageRelationshipMapping = [RKRelationshipMapping relationshipMappingFromKeyPath:kImagesKey toKeyPath:kImagesKey withMapping:imageMapping];
+    
+    [mapping addPropertyMapping:imageRelationshipMapping];
     
     mapping.identificationAttributes = @[kProductIdKey];
     
@@ -45,15 +52,15 @@ static NSString * kImagesKey            =   @"images";
 
 - (PhotoPreview*)preview
 {
-    if ([self.images length])
+    if ([self.images count])
     {
         if (!self.photoPreview)
         {
             self.photoPreview = [PhotoPreview MR_createEntity];
             
-            NSString *link = [@"http:" stringByAppendingString:self.images];
+            Image *image = self.images[0];
             
-            self.photoPreview.path = link;
+            self.photoPreview.path = image.url;
         }
     }
     else

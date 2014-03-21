@@ -17,7 +17,7 @@
 @property (nonatomic, retain) NSNumber * productId;
 @property (nonatomic, retain) NSString * desc;
 @property (nonatomic, retain) NSString * name;
-@property (nonatomic, retain) NSString * images;
+@property (nonatomic, retain) NSOrderedSet * images;
 
 @property (nonatomic, retain) PhotoPreview *photoPreview;
 

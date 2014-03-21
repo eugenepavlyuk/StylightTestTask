@@ -13,6 +13,10 @@
         <attribute name="picture" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="photoPreview" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="PhotoPreview" syncable="YES"/>
     </entity>
+    <entity name="Image" representedClassName="Image" syncable="YES">
+        <attribute name="primary" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <entity name="Item" representedClassName="Item" syncable="YES">
         <attribute name="datecreated" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="itemId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
@@ -31,9 +35,9 @@
     </entity>
     <entity name="Product" representedClassName="Product" syncable="YES">
         <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="images" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="productId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="images" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Image" syncable="YES"/>
         <relationship name="photoPreview" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="PhotoPreview" syncable="YES"/>
     </entity>
     <elements>
@@ -43,5 +47,6 @@
         <element name="Creator" positionX="-36" positionY="54" width="128" height="118"/>
         <element name="Product" positionX="-9" positionY="81" width="128" height="118"/>
         <element name="PhotoPreview" positionX="9" positionY="117" width="128" height="58"/>
+        <element name="Image" positionX="-27" positionY="72" width="128" height="75"/>
     </elements>
 </model>

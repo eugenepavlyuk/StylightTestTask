@@ -29,7 +29,6 @@
 
 - (NSString*)anyName;
 - (NSString*)anyDescription;
-- (NSString*)anyPictureLink;
 
 @end
 

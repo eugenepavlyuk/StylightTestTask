@@ -83,7 +83,7 @@ static NSString * kProductKey           =   @"product";
         }
     }
     
-    return @"name";
+    return @"";
 }
 
 - (NSString*)anyDescription
@@ -93,12 +93,7 @@ static NSString * kProductKey           =   @"product";
         return self.product.desc;
     }
     
-    return @"description";
-}
-
-- (NSString*)anyPictureLink
-{
-    return @"fdsfasdfa";
+    return @"";
 }
 
 @end
