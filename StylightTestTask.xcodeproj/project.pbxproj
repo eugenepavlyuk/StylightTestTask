@@ -31,7 +31,6 @@
 		A6C0EE0E18DB448900B0DE65 /* RKErrorMessage+MappingDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C0EDE718DB448800B0DE65 /* RKErrorMessage+MappingDescriptor.m */; };
 		A6C0EE1F18DB48BE00B0DE65 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C0EE1E18DB48BE00B0DE65 /* ListViewController.m */; };
 		A6C0EE5218DB494200B0DE65 /* StylightModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C0EE3718DB494200B0DE65 /* StylightModel.m */; };
-		A6C0EE5318DB494200B0DE65 /* StylightDateTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C0EE3918DB494200B0DE65 /* StylightDateTransformer.m */; };
 		A6C0EE5C18DB4A8C00B0DE65 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6C0EE5B18DB4A8C00B0DE65 /* CoreData.framework */; };
 		A6C0EE6118DB515700B0DE65 /* database.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A6C0EE5F18DB515700B0DE65 /* database.xcdatamodeld */; };
 /* End PBXBuildFile section */
@@ -83,8 +82,6 @@
 		A6C0EE1E18DB48BE00B0DE65 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
 		A6C0EE3618DB494200B0DE65 /* StylightModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StylightModel.h; sourceTree = "<group>"; };
 		A6C0EE3718DB494200B0DE65 /* StylightModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StylightModel.m; sourceTree = "<group>"; };
-		A6C0EE3818DB494200B0DE65 /* StylightDateTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StylightDateTransformer.h; sourceTree = "<group>"; };
-		A6C0EE3918DB494200B0DE65 /* StylightDateTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StylightDateTransformer.m; sourceTree = "<group>"; };
 		A6C0EE5B18DB4A8C00B0DE65 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		A6C0EE6018DB515700B0DE65 /* database.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = database.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -249,8 +246,6 @@
 				A6BC28D018DC79CF00E8F571 /* PhotoPreview.m */,
 				A6C0EE3618DB494200B0DE65 /* StylightModel.h */,
 				A6C0EE3718DB494200B0DE65 /* StylightModel.m */,
-				A6C0EE3818DB494200B0DE65 /* StylightDateTransformer.h */,
-				A6C0EE3918DB494200B0DE65 /* StylightDateTransformer.m */,
 				A6BC28AD18DC41CE00E8F571 /* Item.h */,
 				A6BC28AE18DC41CE00E8F571 /* Item.m */,
 				A6BC28B618DC541F00E8F571 /* Page.h */,
@@ -389,7 +384,6 @@
 				A6C0EE0E18DB448900B0DE65 /* RKErrorMessage+MappingDescriptor.m in Sources */,
 				A6C0EE5218DB494200B0DE65 /* StylightModel.m in Sources */,
 				A6BC28CA18DC6DF600E8F571 /* Product.m in Sources */,
-				A6C0EE5318DB494200B0DE65 /* StylightDateTransformer.m in Sources */,
 				A6C0EDD218DB3CDA00B0DE65 /* ConnectionManager+CoreData.m in Sources */,
 				A6C0EE6118DB515700B0DE65 /* database.xcdatamodeld in Sources */,
 				A6C0EE1F18DB48BE00B0DE65 /* ListViewController.m in Sources */,
